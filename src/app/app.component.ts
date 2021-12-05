@@ -7,9 +7,5 @@ import {RecipeService} from "./recipes/recipe.service";
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  loadedFeature: string = 'recipe';
 
-  onNavigate(feature: string) {
-    this.loadedFeature = feature;
-  }
 }
