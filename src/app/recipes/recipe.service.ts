@@ -1,4 +1,5 @@
 import {Recipe} from "./recipe.model";
+import {EventEmitter} from "@angular/core";
 
 export class RecipeService {
   private recipes: Recipe[] = [
@@ -14,8 +15,14 @@ export class RecipeService {
     ),
   ];
 
+  selected = new EventEmitter<Recipe>();
+
   addRecipe(recipe: Recipe) {
     this.recipes.push(recipe);
+  }
+
+  getSelected() {
+    return this.selected;
   }
 
   getRecipes() {
