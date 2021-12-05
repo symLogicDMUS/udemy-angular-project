@@ -9,4 +9,13 @@ import {RecipeService} from "../recipe.service";
 })
 export class RecipeDetailComponent {
   @Input() recipe: Recipe;
+
+  constructor(private recipeService: RecipeService) {}
+
+  ngOnInit() {
+  }
+
+  onAddToShoppingList() {
+    this.recipeService.addIngredientsToShoppingList(this.recipe.ingredients)
+  }
 }
