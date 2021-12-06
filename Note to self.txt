@@ -1,1 +1,2 @@
-Left off at video 87: Passing recipe data with property binding
+Left off at video 159: Fixing page reload issues
+skipped videos 146-154 (last part of Changing Pages with Routing)

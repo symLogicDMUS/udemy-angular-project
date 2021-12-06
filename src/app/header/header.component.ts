@@ -6,9 +6,4 @@ import { Component, EventEmitter, Output } from '@angular/core';
 })
 export class HeaderComponent {
   collapsed = true;
-
-  constructor() {}
-
-  ngInit() {}
-
 }
